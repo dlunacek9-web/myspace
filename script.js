@@ -52,6 +52,53 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 4. Dollar Particle Trail on Mouse Move
+  let lastParticleTime = 0;
+  const particleThrottleMs = 35; // Spawn frequency throttle
+
+  document.addEventListener('mousemove', (e) => {
+    const now = Date.now();
+    if (now - lastParticleTime < particleThrottleMs) return;
+    lastParticleTime = now;
+
+    createDollarParticle(e.clientX, e.clientY);
+  });
+
+  function createDollarParticle(x, y) {
+    const particle = document.createElement('span');
+    particle.className = 'dollar-particle';
+    particle.textContent = '$';
+
+    // Randomize initial slight offset and float direction
+    const offsetX = (Math.random() - 0.5) * 16;
+    const offsetY = (Math.random() - 0.5) * 16;
+    const driftX = (Math.random() - 0.5) * 30;
+    const driftY = -15 - Math.random() * 25; // Drift upwards
+
+    particle.style.left = `${x + offsetX}px`;
+    particle.style.top = `${y + offsetY}px`;
+    particle.style.setProperty('--drift-x', `${driftX}px`);
+    particle.style.setProperty('--drift-y', `${driftY}px`);
+
+    // Randomize slight size variation
+    const scale = 0.7 + Math.random() * 0.5;
+    particle.style.fontSize = `${11 * scale}px`;
+
+    document.body.appendChild(particle);
+
+    // Remove element after burning animation finishes
+    particle.addEventListener('animationend', () => {
+      particle.remove();
+    });
+
+    // Fallback cleanup
+    setTimeout(() => {
+      if (particle.parentNode) {
+        particle.remove();
+      }
+    }, 1000);
+  }
+
   // 3. Simulated Music Player Controls
   const playPauseBtn = document.getElementById('play-pause-btn');
   const progressBar = document.getElementById('progress-bar');
