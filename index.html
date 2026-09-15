@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordan Belfort | MySpace Fan Profile (The Wolf of Wall Street Parody)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top MySpace Header / Navigation -->
+  <header class="myspace-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <span class="myspace-logo">my<span class="logo-space">space</span>.com</span>
+        <span class="sub-logo">| Wall Street Edition (2006)</span>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search MySpace..." readonly>
+        <button type="button">Search</button>
+      </div>
+    </div>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Browse</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Invite</a></li>
+        <li><a href="#">Film Fan Club</a></li>
+        <li><a href="#">Mail</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Favorites</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Groups</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Music</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <div class="profile-container">
+
+    <!-- Top Profile Banner & Status -->
+    <div class="profile-top-bar">
+      <div class="profile-headline">
+        <h1>Jordan Belfort <span class="parody-badge">[Movie Fan Page]</span></h1>
+        <p class="tagline">&quot;The Wolf of Wall Street &ndash; Money is the greatest motivator on earth.&quot;</p>
+      </div>
+      <div class="view-counter">
+        <span class="counter-label">Profile Views:</span>
+        <span class="counter-num" id="view-count">0847921</span>
+      </div>
+    </div>
+
+    <div class="main-layout">
+
+      <!-- LEFT COLUMN -->
+      <aside class="left-column">
+        <div class="user-info-box">
+          <h2 class="user-name">Jordan Belfort</h2>
+          <div class="profile-pic-container">
+            <svg class="profile-img-placeholder" width="220" height="240" viewBox="0 0 220 240" xmlns="http://www.w3.org/2000/svg">
+              <rect width="220" height="240" fill="#0d1b2a"/>
+              <circle cx="110" cy="90" r="45" fill="#c5a059"/>
+              <path d="M 40 210 Q 110 130 180 210 Z" fill="#c5a059"/>
+              <rect x="75" y="150" width="70" height="40" fill="#111827"/>
+              <polygon points="110,150 100,180 120,180" fill="#10b981"/>
+              <text x="110" y="230" text-anchor="middle" fill="#d1d5db" font-size="12" font-family="Arial">Stratton Oakmont CEO</text>
+            </svg>
+            <span class="online-indicator">
+              <span class="dot green"></span> ONLINE NOW!
+            </span>
+          </div>
+          <div class="user-details">
+            <p><strong>Pohlaví:</strong> Muž</p>
+            <p><strong>Věk:</strong> 30 let</p>
+            <p><strong>Lokalita:</strong> Long Island, New York, USA</p>
+            <p><strong>Naposledy přihlášen:</strong> Dnes 03:42 AM</p>
+          </div>
+        </div>
+
+        <!-- Contacting Box -->
+        <div class="contact-box">
+          <div class="box-header">Contacting Jordan</div>
+          <div class="contact-grid">
+            <button class="contact-btn" id="add-friend-btn"><span class="icon">➕</span> Add to Friends</button>
+            <button class="contact-btn" id="add-favorite-btn"><span class="icon">⭐</span> Add to Favorites</button>
+            <button class="contact-btn"><span class="icon">✉️</span> Send Message</button>
+            <button class="contact-btn"><span class="icon">FORWARD</span> Forward to Friend</button>
+            <button class="contact-btn"><span class="icon">💬</span> Instant Message</button>
+
+            <button class="contact-btn"><span class="icon">🚫</span> Block User</button>
+            <button class="contact-btn"><span class="icon">👥</span> Add to Group</button>
+            <button class="contact-btn"><span class="icon">🚩</span> Report Rank</button>
+          </div>
+        </div>
+
+        <!-- MySpace URL Box -->
+        <div class="url-box">
+          <strong>MySpace URL:</strong><br>
+          <a href="#">http://www.myspace.com/wolf_of_wallstreet_2013</a>
+        </div>
+
+        <!-- Blurbs Section Left -->
+        <div class="box blurbs-box">
+          <div class="box-header">Jordan's Blurbs</div>
+          <div class="blurb-content">
+            <h4>Who I'd like to meet:</h4>
+            <p>Kohokoliv, kdo chce být pohádkově bohatý. Hledám pouze dravce, makléře s hladem po úspěchu a lidi, kteří neberou 'NE' jako odpověď. Pokud neplánuješ vydělávat milion dolarů ročně, ani mi nepiš na ICQ nebo MySpace. Jo a taky Steve Madden – potřebuju víc akologií!</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT COLUMN -->
+      <main class="right-column">
+
+        <!-- Music Player Simulation -->
+        <div class="box music-player-box">
+          <div class="box-header">
+            🎵 Jordan's Playlist (90s Wall Street Anthems)
+          </div>
+          <div class="player-body">
+            <div class="player-info">
+              <span class="song-title">Now Playing: <strong>Dusty Springfield - &quot;The Windmills of Your Mind&quot;</strong></span>
+              <span class="album-art">🎷 90s Luxury Beats</span>
+            </div>
+            <div class="player-controls">
+              <button type="button" class="player-btn" id="play-pause-btn">▶ PLAY</button>
+              <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+              </div>
+              <span class="time-display">02:45 / 03:51</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Latest Status & Film Quotes Blog -->
+        <div class="box status-blog-box">
+          <div class="box-header">Jordan's Latest Updates & Statuses (Film Quotes)</div>
+          <div class="blog-posts">
+
+            <article class="post">
+              <div class="post-title">
+                <span class="title-text">&quot;Prodej mi tohle pero!&quot;</span>
+                <span class="post-date">12. Říj 2006 @ 14:15</span>
+              </div>
+              <p>Sedíme na obědě v dineru a já vytáhnu z kapsy obyčejné Blic pero. Říkám klukům: <em>„Prodejte mi tohle pero.“</em> Brad si ho vezme a povídá: <em>„Napiš svoje jméno na ten ubrousek.“</em> Odpovídám: <em>„Nemám čím.“</em> A on na to: <em>„Poptávka a nabídka, příteli.“</em> Přesně takhle se dělá byznys! Žádné zbytečné kecy!</p>
+            </article>
+
+            <article class="post">
+              <div class="post-title">
+                <span class="title-text">&quot;I'm not fucking leaving!&quot;</span>
+                <span class="post-date">05. Říj 2006 @ 18:30</span>
+              </div>
+              <p>Stál jsem dnes před celou firmou na trading flooru. Všichni si mysleli, že odstoupím a udělám dohodu s SEC. Ale víte co? SHOW GOES ON! Chopil jsem se mikrofonu a zařval do davu: <strong>I'M NOT FUCKIN' LEAVING!</strong> Celá kancelář explodovala. Budou muset poslat národní gardu, aby mě odsud dostali!</p>
+            </article>
+
+            <article class="post">
+              <div class="post-title">
+                <span class="title-text">Oběd s Markem Hannou v Windows on the World</span>
+                <span class="post-date">28. Zář 2006 @ 13:00</span>
+              </div>
+              <p>Můj první den na Wall Street a legendární Mark Hanna mi vysvětlil hlavní pravidlo této hry: <em>„Nikdo nevědomky neví, jestli akcie půjdou nahoru, dolů nebo do strany.“</em> Klíč k úspěchu? Udržovat klienty na kolotoči a pořád bušit do prsou! 🎶 *Humming & chest thumping intensifies* 🎶</p>
+            </article>
+
+            <article class="post">
+              <div class="post-title">
+                <span class="title-text">Víkend v Monaku a Lemmon 714</span>
+                <span class="post-date">15. Zář 2006 @ 22:10</span>
+              </div>
+              <p>Jachta Nadine zakotvená v Monaku, šampaňské teče proudem a Donnie si myslel, že našel starou zásobu legendárních Quaaludes Lemmon 714. Efekt měl zpoždění... dokud jsme se nepokusili sejít ze schodů v klubu. Dosažena fáze 'cerebrální obrny'. 😅 (Disclaimer: Pouze filmová vzpomínka! Nepokoušejte se o to doma!)</p>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- About Me & Interests -->
+        <div class="box about-box">
+          <div class="box-header">About Jordan Belfort (Movie Character)</div>
+          <div class="about-content">
+            <p>Zakladatel a výkonný ředitel <strong>Stratton Oakmont, Inc.</strong> Z nuly jsem vybudoval impérium, které zvedá telefony a prodává sny. Můj životní styl? Bílý Ferrari Testarossa, soukromá helikoptéra, jachta Nadine a večírky, o kterých se vám ani nesnilo.</p>
+            <p>Lidé se mě ptají, jestli je v pořádku mít tolik peněz. Moje odpověď: <em>Být chudý nepřináší žádnou hrdost. Peníze řeší všechny vaše problémy a dělají z vás lepšího člověka!</em> Když máte peníze, můžete dorazit ve Ferrari a v obleku za $2,000!</p>
+          </div>
+
+          <div class="interests-grid">
+            <div class="interest-row">
+              <div class="interest-label">General:</div>
+              <div class="interest-val">Wall Street, Penny stocks, IPOs, Jachting, Ferrari Testarossa, Vrtulníky, Luxusní hodinky Rolex, Život na vysoké noze.</div>
+            </div>
+            <div class="interest-row">
+              <div class="interest-label">Music:</div>
+              <div class="interest-val">Dusty Springfield, Cannonball Adderley, Cypress Hill, Plastic Bertrand (Ca Plane Pour Moi), 90s Hip-Hop & Wall Street party tracks.</div>
+            </div>
+            <div class="interest-row">
+              <div class="interest-label">Movies:</div>
+              <div class="interest-val">Wall Street (1987), Goodfellas, Casino, Boiler Room, Scarface.</div>
+            </div>
+            <div class="interest-row">
+              <div class="interest-label">Books:</div>
+              <div class="interest-val">Straight Line Selling Guide, How to Win Friends and Influence People, The Art of War, Forbes Magazine (když mě nazvali Vlkem).</div>
+            </div>
+            <div class="interest-row">
+              <div class="interest-label">Heroes:</div>
+              <div class="interest-val">Mark Hanna, sám sobě za 10 let, každý makléř ze Stratton Oakmont, který se nebojí zvednout telefon.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top 8 Friends Space -->
+        <div class="box friends-box">
+          <div class="box-header">Jordan's Friend Space (Top 8)</div>
+          <div class="friends-subhead">Jordan has <span class="highlight">4,892</span> Friends.</div>
+
+          <div class="top8-grid">
+
+            <div class="friend-card">
+              <a href="#donnie" class="friend-link">
+                <span class="friend-name">Donnie Azoff</span>
+                <div class="friend-img-wrap">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#1e3a8a"/>
+                    <circle cx="50" cy="40" r="22" fill="#fbbf24"/>
+                    <rect x="35" y="35" width="30" height="8" rx="2" fill="#ffffff"/>
+                    <circle cx="42" cy="39" r="2" fill="#000"/>
+                    <circle cx="58" cy="39" r="2" fill="#000"/>
+                    <path d="M 20 90 Q 50 55 80 90 Z" fill="#3b82f6"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <div class="friend-card">
+              <a href="#naomi" class="friend-link">
+                <span class="friend-name">Naomi Lapaglia</span>
+                <div class="friend-img-wrap">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#831843"/>
+                    <circle cx="50" cy="42" r="22" fill="#fbcfe8"/>
+                    <path d="M 30 25 Q 50 15 70 25 Q 75 50 65 65 Q 35 65 30 25 Z" fill="#db2777" opacity="0.6"/>
+                    <path d="M 20 95 Q 50 60 80 95 Z" fill="#f472b6"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <div class="friend-card">
+              <a href="#mark" class="friend-link">
+                <span class="friend-name">Mark Hanna</span>
+                <div class="friend-img-wrap">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#064e3b"/>
+                    <circle cx="50" cy="40" r="22" fill="#d1fae5"/>
+                    <path d="M 20 90 Q 50 50 80 90 Z" fill="#059669"/>
+                    <text x="50" y="85" font-size="20" text-anchor="middle" fill="#fbbf24">🍸</text>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <div class="friend-card">
+              <a href="#steve" class="friend-link">
+                <span class="friend-name">Steve Madden</span>
+                <div class="friend-img-wrap">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#451a03"/>
+                    <circle cx="50" cy="40" r="22" fill="#fde68a"/>
+                    <rect x="30" y="32" width="40" height="6" fill="#78350f"/>
+                    <path d="M 20 90 Q 50 55 80 90 Z" fill="#b45309"/>
+                    <text x="50" y="88" font-size="14" text-anchor="middle" fill="#ffffff">👟 Shoes</text>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <div class="friend-card">
+              <a href="#brad" class="friend-link">
+                <span class="friend-name">Brad Bodnick</span>
+                <div class="friend-img-wrap">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#312e81"/>
+                    <circle cx="50" cy="40" r="22" fill="#e0e7ff"/>
+                    <path d="M 20 90 Q 50 55 80 90 Z" fill="#4f46e5"/>
+                    <text x="50" y="85" font-size="14" text-anchor="middle" fill="#ffffff">🖊️ Pen</text>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <div class="friend-card">
+              <a href="#denham" class="friend-link">
+                <span class="friend-name">Agent Denham</span>
+                <div class="friend-img-wrap">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#111827"/>
+                    <circle cx="50" cy="40" r="22" fill="#9ca3af"/>
+                    <rect x="38" y="36" width="24" height="6" fill="#1f2937"/>
+                    <path d="M 20 90 Q 50 55 80 90 Z" fill="#374151"/>
+                    <text x="50" y="85" font-size="12" text-anchor="middle" fill="#ef4444">FBI 🚔</text>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <div class="friend-card">
+              <a href="#robbie" class="friend-link">
+                <span class="friend-name">Robbie Feinberg</span>
+                <div class="friend-img-wrap">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#1e293b"/>
+                    <circle cx="50" cy="40" r="22" fill="#fed7aa"/>
+                    <path d="M 20 90 Q 50 55 80 90 Z" fill="#ea580c"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <div class="friend-card">
+              <a href="#aunt-emma" class="friend-link">
+                <span class="friend-name">Aunt Emma</span>
+                <div class="friend-img-wrap">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#3f6212"/>
+                    <circle cx="50" cy="40" r="22" fill="#fef08a"/>
+                    <path d="M 20 90 Q 50 55 80 90 Z" fill="#65a30d"/>
+                    <text x="50" y="85" font-size="12" text-anchor="middle" fill="#ffffff">🇬🇧 Swiss</text>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Friends Comments Section -->
+        <div class="box comments-box">
+          <div class="box-header">
+            <span>Friends Comments</span>
+            <span class="comment-count-badge">Displaying <span id="displayed-comments-count">3</span> of 6 comments</span>
+          </div>
+
+          <div class="comments-list" id="comments-list">
+
+            <div class="comment-item">
+              <div class="comment-author">
+                <strong>Donnie Azoff</strong>
+                <div class="comment-avatar">
+                  <svg width="60" height="60" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#1e3a8a"/>
+                    <circle cx="50" cy="40" r="22" fill="#fbbf24"/>
+                    <rect x="35" y="35" width="30" height="8" rx="2" fill="#ffffff"/>
+                  </svg>
+                </div>
+                <span class="comment-date">11. Říj 2006</span>
+              </div>
+              <div class="comment-body">
+                <p>Jordane, ty vole! Ta včerejší párty byla neskutečná! Zase jsem snědl zlatou rybku jednoho z nováčků, protože nepřekonal kvótu! 😂 Půjčíš mi zítra Ferrari? Moje je v servisu!</p>
+              </div>
+            </div>
+
+            <div class="comment-item">
+              <div class="comment-author">
+                <strong>Mark Hanna</strong>
+                <div class="comment-avatar">
+                  <svg width="60" height="60" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#064e3b"/>
+                    <circle cx="50" cy="40" r="22" fill="#d1fae5"/>
+                  </svg>
+                </div>
+                <span class="comment-date">09. Říj 2006</span>
+              </div>
+              <div class="comment-body">
+                <p>Skvělá práce v obchodech tento týden, mladíku! Nezapomínej na dvě věci: udržuj čísla na obrazovce a dělej přesně to, co jsme probírali na obědě. Mm-mm-mm-hmmm! 🎶</p>
+              </div>
+            </div>
+
+            <div class="comment-item">
+              <div class="comment-author">
+                <strong>Naomi Lapaglia</strong>
+                <div class="comment-avatar">
+                  <svg width="60" height="60" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#831843"/>
+                    <circle cx="50" cy="42" r="22" fill="#fbcfe8"/>
+                  </svg>
+                </div>
+                <span class="comment-date">02. Říj 2006</span>
+              </div>
+              <div class="comment-body">
+                <p>Jordane, přestaň utrácet miliony za blbosti a jdi konečně vyvenčit psa! A do té naší dětské ložnice včera v noci nikdo nevešel, tak se nepřetvaruj... 💋💅</p>
+              </div>
+            </div>
+
+            <!-- Extra comments (hidden by default until toggled) -->
+            <div class="comment-item hidden-comment">
+              <div class="comment-author">
+                <strong>Agent Patrick Denham</strong>
+                <div class="comment-avatar">
+                  <svg width="60" height="60" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#111827"/>
+                    <circle cx="50" cy="40" r="22" fill="#9ca3af"/>
+                  </svg>
+                </div>
+                <span class="comment-date">25. Zář 2006</span>
+              </div>
+              <div class="comment-body">
+                <p>Pěkná jachta, pane Belforte. Mimochodem, metro v New Yorku je v létě dost horké... ale aspoň je poctivé. Uvidíme se brzy na výslechu.</p>
+              </div>
+            </div>
+
+            <div class="comment-item hidden-comment">
+              <div class="comment-author">
+                <strong>Steve Madden</strong>
+                <div class="comment-avatar">
+                  <svg width="60" height="60" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#451a03"/>
+                    <circle cx="50" cy="40" r="22" fill="#fde68a"/>
+                  </svg>
+                </div>
+                <span class="comment-date">18. Zář 2006</span>
+              </div>
+              <div class="comment-body">
+                <p>Díky za ten IPO obchod, Jordane! Boty jdou na odbyt, ale proč Donnie pořád nosí ty divné bílé zuby, když s námi vyjednává?</p>
+              </div>
+            </div>
+
+            <div class="comment-item hidden-comment">
+              <div class="comment-author">
+                <strong>Brad Bodnick</strong>
+                <div class="comment-avatar">
+                  <svg width="60" height="60" viewBox="0 0 100 100">
+                    <rect width="100" height="100" fill="#312e81"/>
+                    <circle cx="50" cy="40" r="22" fill="#e0e7ff"/>
+                  </svg>
+                </div>
+                <span class="comment-date">10. Zář 2006</span>
+              </div>
+              <div class="comment-body">
+                <p>Stále mám to tvoje pero! A Quaaludy mám schované u mámy v garáži. Zavolej mi z pevné linky, žádné mobilní telefony!</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="comments-footer">
+            <button id="toggle-comments-btn" class="view-all-btn">View All Comments (6)</button>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <!-- Parody Footer Disclaimer -->
+    <footer class="myspace-footer">
+      <p class="disclaimer">
+        <strong>Fiktivní fanouškovská / parodická stránka:</strong> Tento profil je školní projekt a parodie vytvořená na motivy filmové postavy Jordana Belforta z filmu <em>Vlk z Wall Street</em> (2013). Nejedná se o oficiální ani osobní stránku skutečné osoby. Všechny zmínky, statusy a postavy odkazují výhradně na fiktivní a filmové výjevy.
+      </p>
+      <div class="footer-links">
+        <a href="#">About</a> | <a href="#">FAQ</a> | <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Safety</a> | <a href="#">MySpace Film Parody 2006</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
