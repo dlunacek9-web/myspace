@@ -136,26 +136,25 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
 
   /**
-   * List of 15 YouTube Shorts links & details.
-   * To update or replace videos, paste your 15 YouTube Shorts URLs or IDs in the `url` field below.
+   * List of YouTube Shorts links & details.
+   * Contains the 5 YouTube Shorts videos provided by the user.
    */
   const YOUTUBE_SHORTS_DATA = [
     {
-      url: 'https://www.youtube.com/shorts/dQw4w9WgXcQ',
-      caption: 'Prodej mi tohle pero! 🖊️ Nikdy se nevzdávej v obchodu! #wolfofwallstreet #shorts',
-      likes: 15400,
+      url: 'https://www.youtube.com/shorts/GsdY4QDM0Xg',
+      caption: 'Vlk z Wall Street – Jordan Belfort #1 🐺📈 #wolfofwallstreet #shorts',
+      likes: 18400,
       isLiked: false,
       sound: 'Jordan Belfort - Stratton Oakmont Sales Pitch',
       comments: [
-        { user: 'Donnie Azoff', text: 'Napiš svoje jméno na ubrousek! 😂' },
-        { user: 'Brad Bodnick', text: 'Poptávka a nabídka, příteli!' },
-        { user: 'Stratton Broker', text: 'Legendární scéna, zvedám telefon!' }
+        { user: 'Donnie Azoff', text: 'Neskutečná energie! 🚀' },
+        { user: 'Stratton Broker', text: 'Zvedám telefon a prodávám!' }
       ]
     },
     {
-      url: 'https://www.youtube.com/shorts/3JZ_D3ELwOQ',
-      caption: 'JÁ ODSUD K***A NEODCHÁZÍM! 🎤🔥 Show nekončí! #wolfofwallstreet #motivation',
-      likes: 28900,
+      url: 'https://www.youtube.com/shorts/YNNo8vuUepQ',
+      caption: 'Jak prodávat a být nejlepší na Wall Street #2 🔥 #trading #success',
+      likes: 24900,
       isLiked: false,
       sound: 'Wall Street Speech Anthem - Remastered',
       comments: [
@@ -164,139 +163,36 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     {
-      url: 'https://www.youtube.com/shorts/L_LUpnjgPso',
-      caption: 'Oběd s Markem Hannou v restauraci Windows on the World 🍸 #wallstreet #advice',
-      likes: 9800,
+      url: 'https://www.youtube.com/shorts/YhEUnjsNyyo',
+      caption: 'Pravidlo úspěchu Jordana Belforta #3 🍸 #wallstreet #mindset',
+      likes: 15800,
       isLiked: false,
       sound: 'Mark Hanna - Humming & Chest Thump Theme',
       comments: [
         { user: 'Mark Hanna', text: 'Mm-mm-mm-hmmm! Udělej to dvakrát denně!' },
-        { user: 'Jordan Belfort', text: 'Nejlepší rady pro začátečníka!' }
+        { user: 'Jordan Belfort', text: 'Pravá motivace z Wall Street!' }
       ]
     },
     {
-      url: 'https://www.youtube.com/shorts/fJ9rUzIMcZQ',
-      caption: 'Steve Madden IPO den! 👟 Miliony prodané během 3 minut! #stevemadden #ipo',
-      likes: 12100,
+      url: 'https://www.youtube.com/shorts/3fjLpIcDM5w',
+      caption: 'Stratton Oakmont v akci #4 💰 #money #lifestyle',
+      likes: 21100,
       isLiked: false,
       sound: 'Steve Madden - Shoes & Stocks Beat',
       comments: [
-        { user: 'Steve Madden', text: 'Díky za skvělý obchod Jordane!' },
-        { user: 'Donnie Azoff', text: 'Bílé zuby a Steve Madden!' }
+        { user: 'Steve Madden', text: 'Legendární obchod!' },
+        { user: 'Donnie Azoff', text: 'Bílé zuby a makléři!' }
       ]
     },
     {
-      url: 'https://www.youtube.com/shorts/kJQP7kiw5Fk',
-      caption: 'Bílý Ferrari Testarossa v akci 🏎️💨 #ferrari #luxury #wallstreet',
-      likes: 34200,
+      url: 'https://www.youtube.com/shorts/qR-n_T1A9fw',
+      caption: 'Peníze jsou největší motivací na světě #5 🏎️ #ferrari #luxury',
+      likes: 38200,
       isLiked: false,
       sound: '90s Eurodance Party - Miami Vice Vibes',
       comments: [
-        { user: 'Naomi Lapaglia', text: 'Jordane, jeď opatrně!' },
-        { user: 'Donnie Azoff', text: 'Půjčíš mi klíče na víkend?' }
-      ]
-    },
-    {
-      url: 'https://www.youtube.com/shorts/2Vv-BfVoq4g',
-      caption: 'Pravidlo č. 1 na Wall Street: Udržuj klienty na kolotoči 🎡 #trading #stocks',
-      likes: 7600,
-      isLiked: false,
-      sound: 'Wall Street Stock Ticker Beats',
-      comments: [
-        { user: 'Junior Broker', text: 'Zaznamenáno do zápisníku sir!' }
-      ]
-    },
-    {
-      url: 'https://www.youtube.com/shorts/OPf0YbXqDm0',
-      caption: 'Lemmon 714 Quaaludes vzpomínka 🍋 (Filmová parodie) #wolfofwallstreet #humor',
-      likes: 41000,
-      isLiked: false,
-      sound: 'Cerebral Palsy Stage Sound Effect',
-      comments: [
-        { user: 'Donnie Azoff', text: 'To mělo zpoždění 15 let! 😅' },
-        { user: 'Aunt Emma', text: 'Chlapci, buďte rozumní!' }
-      ]
-    },
-    {
-      url: 'https://www.youtube.com/shorts/V-_O7nl0Ii0',
-      caption: 'FBI navštěvuje jachtu Nadine v New Yorku 🚔🛥️ #fbi #agentdenham',
-      likes: 18300,
-      isLiked: false,
-      sound: 'FBI Tension Drums - Soundtracks',
-      comments: [
-        { user: 'Agent Denham', text: 'Metro v New Yorku je v létě dost horké.' },
-        { user: 'Jordan Belfort', text: 'Přejete si humra nebo šampaňské, agente?' }
-      ]
-    },
-    {
-      url: 'https://www.youtube.com/shorts/e-ORhEE9VVg',
-      caption: 'Peníze nevytváří jen lepší život, dělají z vás lepšího člověka! 💰 #money #mindset',
-      likes: 22100,
-      isLiked: false,
-      sound: 'Stratton Oakmont Victory March',
-      comments: [
-        { user: 'Trader John', text: 'Pravdivější slova jsem neslyšel!' }
-      ]
-    },
-    {
-      url: 'https://www.youtube.com/shorts/60ItHLz5WEA',
-      caption: 'Švýcarský bankovní účet a Teta Emma 🇨🇭💼 #switzerland #geneva',
-      likes: 11400,
-      isLiked: false,
-      sound: 'Swiss Alpine Chill Beats',
-      comments: [
-        { user: 'Aunt Emma', text: 'V Ženevě je vždy krásně!' }
-      ]
-    },
-    {
-      url: 'https://www.youtube.com/shorts/ZbZSe6N_BXs',
-      caption: 'Vrtulník v zahradě v Long Islandu 🚁 landing skills #helicopter #lifestyle',
-      likes: 16700,
-      isLiked: false,
-      sound: 'Helicopter Rotor Bass Remix',
-      comments: [
-        { user: 'Kousavý Pes', text: 'Haf haf! Trávník zničen!' }
-      ]
-    },
-    {
-      url: 'https://www.youtube.com/shorts/09R8_2nJtjg',
-      caption: 'Pondělní ranní briefing ve Stratton Oakmont 📈 Zvedněte telefony!',
-      likes: 25400,
-      isLiked: false,
-      sound: 'Stratton Oakmont - Dialing the Phone Beat',
-      comments: [
-        { user: 'Broker #1', text: 'Dnes prodám 10,000 akcií!' }
-      ]
-    },
-    {
-      url: 'https://www.youtube.com/shorts/9bZkp7q19f0',
-      caption: 'Párty na jachtě v Monaku 🍾🎉 #monaco #yachtlife',
-      likes: 31000,
-      isLiked: false,
-      sound: 'Ca Plane Pour Moi - Plastic Bertrand',
-      comments: [
-        { user: 'Captain Ted', text: 'Kapitáne, vlny jsou vysoké!' }
-      ]
-    },
-    {
-      url: 'https://www.youtube.com/shorts/J---aiyznGQ',
-      caption: 'Šimpanz jako makléř na obchodním parketu 🐒📈 #90s #wallstreet',
-      likes: 19800,
-      isLiked: false,
-      sound: 'Crazy Wall Street Office Party Track',
-      comments: [
-        { user: 'Donnie Azoff', text: 'Můj nejlepší kamarád!' }
-      ]
-    },
-    {
-      url: 'https://www.youtube.com/shorts/fJ9rUzIMcZQ',
-      caption: 'Co je tvoje největší motivace? Být bohatý nebo chudý? 🔥 #jordanbelfort #speech',
-      likes: 27500,
-      isLiked: false,
-      sound: 'The Wolf Motivation - Final Chapter',
-      comments: [
-        { user: 'Jordan Belfort', text: 'Vyberte si bohatství!' },
-        { user: 'Fanoušek #100', text: 'Nejlepší profil na celém MySpace!' }
+        { user: 'Naomi Lapaglia', text: 'Jordane, užij si to! 💋' },
+        { user: 'Donnie Azoff', text: 'To je ten pravý styl!' }
       ]
     }
   ];
@@ -386,7 +282,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (reelSoundName) reelSoundName.textContent = item.sound || 'Jordan Belfort - Wall Street Sound';
     if (reelLikesCount) reelLikesCount.textContent = formatNum(item.likes);
     if (reelCommentsCount) reelCommentsCount.textContent = formatNum(item.comments ? item.comments.length : 0);
-    if (reelCurrentNum) reelCurrentNum.textContent = (currentReelIndex + 1).toString();
+    const reelCounterBadge = document.getElementById('reel-counter-badge');
+    if (reelCounterBadge) {
+      reelCounterBadge.innerHTML = `Video <span id="reel-current-num">${currentReelIndex + 1}</span> z ${YOUTUBE_SHORTS_DATA.length}`;
+    }
 
     // Toggle Like button visual active state
     if (reelLikeBtn) {
