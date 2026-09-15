@@ -136,8 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
 
   /**
-   * List of 15 YouTube Shorts links & details.
-   * To update or replace videos, paste your 15 YouTube Shorts URLs or IDs in the `url` field below.
+   * List of YouTube Shorts links & details.
+   * Contains the 5 YouTube Shorts videos provided by the user.
    */
   const YOUTUBE_SHORTS_DATA = [
     {
