@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jordan Belfort | MySpace Fan Profile (The Wolf of Wall Street Parody)</title>
+  <title>Jordan Belfort | MySpace profil fanouška (Parodie na Vlka z Wall Street)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,27 +13,27 @@
     <div class="header-container">
       <div class="logo-area">
         <span class="myspace-logo">my<span class="logo-space">space</span>.com</span>
-        <span class="sub-logo">| Wall Street Edition (2006)</span>
+        <span class="sub-logo">| Wall Street Edice (2006)</span>
       </div>
       <div class="search-bar">
-        <input type="text" placeholder="Search MySpace..." readonly>
-        <button type="button">Search</button>
+        <input type="text" placeholder="Hledat na MySpace..." readonly>
+        <button type="button">Hledat</button>
       </div>
     </div>
     <nav class="top-nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Browse</a></li>
-        <li><a href="#">Search</a></li>
-        <li><a href="#">Invite</a></li>
+        <li><a href="#">Domů</a></li>
+        <li><a href="#">Prohlížet</a></li>
+        <li><a href="#">Hledat</a></li>
+        <li><a href="#">Pozvat</a></li>
         <li><a href="#">Film Fan Club</a></li>
-        <li><a href="#">Mail</a></li>
+        <li><a href="#">Zprávy</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="#">Favorites</a></li>
-        <li><a href="#">Forum</a></li>
-        <li><a href="#">Groups</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Music</a></li>
+        <li><a href="#">Oblíbené</a></li>
+        <li><a href="#">Fórum</a></li>
+        <li><a href="#">Skupiny</a></li>
+        <li><a href="#">Události</a></li>
+        <li><a href="#">Hudba</a></li>
       </ul>
     </nav>
   </header>
@@ -44,11 +44,11 @@
     <!-- Top Profile Banner & Status -->
     <div class="profile-top-bar">
       <div class="profile-headline">
-        <h1>Jordan Belfort <span class="parody-badge">[Movie Fan Page]</span></h1>
-        <p class="tagline">&quot;The Wolf of Wall Street &ndash; Money is the greatest motivator on earth.&quot;</p>
+        <h1>Jordan Belfort <span class="parody-badge">[Fiktivní fanouškovská stránka]</span></h1>
+        <p class="tagline">&quot;Vlk z Wall Street &ndash; Peníze jsou největší motivací na světě.&quot;</p>
       </div>
       <div class="view-counter">
-        <span class="counter-label">Profile Views:</span>
+        <span class="counter-label">Zobrazení profilu:</span>
         <span class="counter-num" id="view-count">0847921</span>
       </div>
     </div>
@@ -60,39 +60,32 @@
         <div class="user-info-box">
           <h2 class="user-name">Jordan Belfort</h2>
           <div class="profile-pic-container">
-            <svg class="profile-img-placeholder" width="220" height="240" viewBox="0 0 220 240" xmlns="http://www.w3.org/2000/svg">
-              <rect width="220" height="240" fill="#0d1b2a"/>
-              <circle cx="110" cy="90" r="45" fill="#c5a059"/>
-              <path d="M 40 210 Q 110 130 180 210 Z" fill="#c5a059"/>
-              <rect x="75" y="150" width="70" height="40" fill="#111827"/>
-              <polygon points="110,150 100,180 120,180" fill="#10b981"/>
-              <text x="110" y="230" text-anchor="middle" fill="#d1d5db" font-size="12" font-family="Arial">Stratton Oakmont CEO</text>
-            </svg>
+            <img src="profile.jpg" alt="Jordan Belfort" class="profile-img-placeholder">
             <span class="online-indicator">
-              <span class="dot green"></span> ONLINE NOW!
+              <span class="dot green"></span> ONLINE TEĎ!
             </span>
           </div>
           <div class="user-details">
             <p><strong>Pohlaví:</strong> Muž</p>
             <p><strong>Věk:</strong> 30 let</p>
             <p><strong>Lokalita:</strong> Long Island, New York, USA</p>
-            <p><strong>Naposledy přihlášen:</strong> Dnes 03:42 AM</p>
+            <p><strong>Naposledy přihlášen:</strong> Dnes 03:42</p>
           </div>
         </div>
 
         <!-- Contacting Box -->
         <div class="contact-box">
-          <div class="box-header">Contacting Jordan</div>
+          <div class="box-header">Kontaktovat Jordana</div>
           <div class="contact-grid">
-            <button class="contact-btn" id="add-friend-btn"><span class="icon">➕</span> Add to Friends</button>
-            <button class="contact-btn" id="add-favorite-btn"><span class="icon">⭐</span> Add to Favorites</button>
-            <button class="contact-btn"><span class="icon">✉️</span> Send Message</button>
-            <button class="contact-btn"><span class="icon">FORWARD</span> Forward to Friend</button>
-            <button class="contact-btn"><span class="icon">💬</span> Instant Message</button>
+            <button class="contact-btn" id="add-friend-btn"><span class="icon">➕</span> Přidat do přátel</button>
+            <button class="contact-btn" id="add-favorite-btn"><span class="icon">⭐</span> Přidat do oblíbených</button>
+            <button class="contact-btn"><span class="icon">✉️</span> Poslat zprávu</button>
+            <button class="contact-btn"><span class="icon">↪️</span> Přeposlat příteli</button>
+            <button class="contact-btn"><span class="icon">💬</span> Rychlá zpráva</button>
 
-            <button class="contact-btn"><span class="icon">🚫</span> Block User</button>
-            <button class="contact-btn"><span class="icon">👥</span> Add to Group</button>
-            <button class="contact-btn"><span class="icon">🚩</span> Report Rank</button>
+            <button class="contact-btn"><span class="icon">🚫</span> Blokovat uživatele</button>
+            <button class="contact-btn"><span class="icon">👥</span> Přidat do skupiny</button>
+            <button class="contact-btn"><span class="icon">🚩</span> Nahlásit uživatele</button>
           </div>
         </div>
 
@@ -104,9 +97,9 @@
 
         <!-- Blurbs Section Left -->
         <div class="box blurbs-box">
-          <div class="box-header">Jordan's Blurbs</div>
+          <div class="box-header">Jordanovy Blurbs</div>
           <div class="blurb-content">
-            <h4>Who I'd like to meet:</h4>
+            <h4>S kým bych se chtěl setkat:</h4>
             <p>Kohokoliv, kdo chce být pohádkově bohatý. Hledám pouze dravce, makléře s hladem po úspěchu a lidi, kteří neberou 'NE' jako odpověď. Pokud neplánuješ vydělávat milion dolarů ročně, ani mi nepiš na ICQ nebo MySpace. Jo a taky Steve Madden – potřebuju víc akologií!</p>
           </div>
         </div>
@@ -118,15 +111,15 @@
         <!-- Music Player Simulation -->
         <div class="box music-player-box">
           <div class="box-header">
-            🎵 Jordan's Playlist (90s Wall Street Anthems)
+            🎵 Jordanův Playlist (Hity z Wall Streetu 90. let)
           </div>
           <div class="player-body">
             <div class="player-info">
-              <span class="song-title">Now Playing: <strong>Dusty Springfield - &quot;The Windmills of Your Mind&quot;</strong></span>
-              <span class="album-art">🎷 90s Luxury Beats</span>
+              <span class="song-title">Právě hraje: <strong>Dusty Springfield - &quot;The Windmills of Your Mind&quot;</strong></span>
+              <span class="album-art">🎷 Luxusní 90s rytmy</span>
             </div>
             <div class="player-controls">
-              <button type="button" class="player-btn" id="play-pause-btn">▶ PLAY</button>
+              <button type="button" class="player-btn" id="play-pause-btn">▶ HRÁT</button>
               <div class="progress-bar-container">
                 <div class="progress-bar" id="progress-bar"></div>
               </div>
@@ -137,7 +130,7 @@
 
         <!-- Latest Status & Film Quotes Blog -->
         <div class="box status-blog-box">
-          <div class="box-header">Jordan's Latest Updates & Statuses (Film Quotes)</div>
+          <div class="box-header">Jordanovy nejnovější aktualizace a statusy (Filmové hlášky)</div>
           <div class="blog-posts">
 
             <article class="post">
@@ -150,18 +143,18 @@
 
             <article class="post">
               <div class="post-title">
-                <span class="title-text">&quot;I'm not fucking leaving!&quot;</span>
+                <span class="title-text">&quot;Já odsud k***a neodcházím!&quot;</span>
                 <span class="post-date">05. Říj 2006 @ 18:30</span>
               </div>
-              <p>Stál jsem dnes před celou firmou na trading flooru. Všichni si mysleli, že odstoupím a udělám dohodu s SEC. Ale víte co? SHOW GOES ON! Chopil jsem se mikrofonu a zařval do davu: <strong>I'M NOT FUCKIN' LEAVING!</strong> Celá kancelář explodovala. Budou muset poslat národní gardu, aby mě odsud dostali!</p>
+              <p>Stál jsem dnes před celou firmou na trading flooru. Všichni si mysleli, že odstoupím a udělám dohodu s SEC. Ale víte co? SHOW GOES ON! Chopil jsem se mikrofonu a zařval do davu: <strong>JÁ ODSUD K***A NEODCHÁZÍM!</strong> Celá kancelář explodovala. Budou muset poslat národní gardu, aby mě odsud dostali!</p>
             </article>
 
             <article class="post">
               <div class="post-title">
-                <span class="title-text">Oběd s Markem Hannou v Windows on the World</span>
+                <span class="title-text">Oběd s Markem Hannou ve Windows on the World</span>
                 <span class="post-date">28. Zář 2006 @ 13:00</span>
               </div>
-              <p>Můj první den na Wall Street a legendární Mark Hanna mi vysvětlil hlavní pravidlo této hry: <em>„Nikdo nevědomky neví, jestli akcie půjdou nahoru, dolů nebo do strany.“</em> Klíč k úspěchu? Udržovat klienty na kolotoči a pořád bušit do prsou! 🎶 *Humming & chest thumping intensifies* 🎶</p>
+              <p>Můj první den na Wall Street a legendární Mark Hanna mi vysvětlil hlavní pravidlo této hry: <em>„Nikdo nevědomky neví, jestli akcie půjdou nahoru, dolů nebo do strany.“</em> Klíč k úspěchu? Udržovat klienty na kolotoči a pořád bušit do prsou! 🎶 *Broukání a bouchání do hrudi* 🎶</p>
             </article>
 
             <article class="post">
@@ -169,7 +162,7 @@
                 <span class="title-text">Víkend v Monaku a Lemmon 714</span>
                 <span class="post-date">15. Zář 2006 @ 22:10</span>
               </div>
-              <p>Jachta Nadine zakotvená v Monaku, šampaňské teče proudem a Donnie si myslel, že našel starou zásobu legendárních Quaaludes Lemmon 714. Efekt měl zpoždění... dokud jsme se nepokusili sejít ze schodů v klubu. Dosažena fáze 'cerebrální obrny'. 😅 (Disclaimer: Pouze filmová vzpomínka! Nepokoušejte se o to doma!)</p>
+              <p>Jachta Nadine zakotvená v Monaku, šampaňské teče proudem a Donnie si myslel, že našel starou zásobu legendárních Quaaludes Lemmon 714. Efekt měl zpoždění... dokud jsme se nepokusili sejít ze schodů v klubu. Dosažena fáze 'cerebrální obrny'. 😅 (Upozornění: Pouze filmová vzpomínka! Nepokoušejte se o to doma!)</p>
             </article>
 
           </div>
@@ -177,7 +170,7 @@
 
         <!-- About Me & Interests -->
         <div class="box about-box">
-          <div class="box-header">About Jordan Belfort (Movie Character)</div>
+          <div class="box-header">O Jordanu Belfortovi (Filmová postava)</div>
           <div class="about-content">
             <p>Zakladatel a výkonný ředitel <strong>Stratton Oakmont, Inc.</strong> Z nuly jsem vybudoval impérium, které zvedá telefony a prodává sny. Můj životní styl? Bílý Ferrari Testarossa, soukromá helikoptéra, jachta Nadine a večírky, o kterých se vám ani nesnilo.</p>
             <p>Lidé se mě ptají, jestli je v pořádku mít tolik peněz. Moje odpověď: <em>Být chudý nepřináší žádnou hrdost. Peníze řeší všechny vaše problémy a dělají z vás lepšího člověka!</em> Když máte peníze, můžete dorazit ve Ferrari a v obleku za $2,000!</p>
@@ -185,23 +178,23 @@
 
           <div class="interests-grid">
             <div class="interest-row">
-              <div class="interest-label">General:</div>
-              <div class="interest-val">Wall Street, Penny stocks, IPOs, Jachting, Ferrari Testarossa, Vrtulníky, Luxusní hodinky Rolex, Život na vysoké noze.</div>
+              <div class="interest-label">Obecné:</div>
+              <div class="interest-val">Wall Street, Penny stocks, IPO, Jachting, Ferrari Testarossa, Vrtulníky, Luxusní hodinky Rolex, Život na vysoké noze.</div>
             </div>
             <div class="interest-row">
-              <div class="interest-label">Music:</div>
-              <div class="interest-val">Dusty Springfield, Cannonball Adderley, Cypress Hill, Plastic Bertrand (Ca Plane Pour Moi), 90s Hip-Hop & Wall Street party tracks.</div>
+              <div class="interest-label">Hudba:</div>
+              <div class="interest-val">Dusty Springfield, Cannonball Adderley, Cypress Hill, Plastic Bertrand (Ca Plane Pour Moi), 90s Hip-Hop a večírkové hity z Wall Streetu.</div>
             </div>
             <div class="interest-row">
-              <div class="interest-label">Movies:</div>
-              <div class="interest-val">Wall Street (1987), Goodfellas, Casino, Boiler Room, Scarface.</div>
+              <div class="interest-label">Filmy:</div>
+              <div class="interest-val">Wall Street (1987), Mafiáni, Kasino, Riziko (Boiler Room), Zjizvená tvář.</div>
             </div>
             <div class="interest-row">
-              <div class="interest-label">Books:</div>
-              <div class="interest-val">Straight Line Selling Guide, How to Win Friends and Influence People, The Art of War, Forbes Magazine (když mě nazvali Vlkem).</div>
+              <div class="interest-label">Knihy:</div>
+              <div class="interest-val">Příručka přímého prodeje, Jak získávat přátele a působit na lidi, Umění války, Časopis Forbes (když mě nazvali Vlkem).</div>
             </div>
             <div class="interest-row">
-              <div class="interest-label">Heroes:</div>
+              <div class="interest-label">Hrdinové:</div>
               <div class="interest-val">Mark Hanna, sám sobě za 10 let, každý makléř ze Stratton Oakmont, který se nebojí zvednout telefon.</div>
             </div>
           </div>
@@ -209,8 +202,8 @@
 
         <!-- Top 8 Friends Space -->
         <div class="box friends-box">
-          <div class="box-header">Jordan's Friend Space (Top 8)</div>
-          <div class="friends-subhead">Jordan has <span class="highlight">4,892</span> Friends.</div>
+          <div class="box-header">Jordanův prostor přátel (Top 8)</div>
+          <div class="friends-subhead">Jordan má <span class="highlight">4 892</span> přátel.</div>
 
           <div class="top8-grid">
 
@@ -267,7 +260,7 @@
                     <circle cx="50" cy="40" r="22" fill="#fde68a"/>
                     <rect x="30" y="32" width="40" height="6" fill="#78350f"/>
                     <path d="M 20 90 Q 50 55 80 90 Z" fill="#b45309"/>
-                    <text x="50" y="88" font-size="14" text-anchor="middle" fill="#ffffff">👟 Shoes</text>
+                    <text x="50" y="88" font-size="14" text-anchor="middle" fill="#ffffff">👟 Obuv</text>
                   </svg>
                 </div>
               </a>
@@ -281,7 +274,7 @@
                     <rect width="100" height="100" fill="#312e81"/>
                     <circle cx="50" cy="40" r="22" fill="#e0e7ff"/>
                     <path d="M 20 90 Q 50 55 80 90 Z" fill="#4f46e5"/>
-                    <text x="50" y="85" font-size="14" text-anchor="middle" fill="#ffffff">🖊️ Pen</text>
+                    <text x="50" y="85" font-size="14" text-anchor="middle" fill="#ffffff">🖊️ Pero</text>
                   </svg>
                 </div>
               </a>
@@ -317,13 +310,13 @@
 
             <div class="friend-card">
               <a href="#aunt-emma" class="friend-link">
-                <span class="friend-name">Aunt Emma</span>
+                <span class="friend-name">Teta Emma</span>
                 <div class="friend-img-wrap">
                   <svg width="100" height="100" viewBox="0 0 100 100">
                     <rect width="100" height="100" fill="#3f6212"/>
                     <circle cx="50" cy="40" r="22" fill="#fef08a"/>
                     <path d="M 20 90 Q 50 55 80 90 Z" fill="#65a30d"/>
-                    <text x="50" y="85" font-size="12" text-anchor="middle" fill="#ffffff">🇬🇧 Swiss</text>
+                    <text x="50" y="85" font-size="12" text-anchor="middle" fill="#ffffff">🇨🇭 Švýcarsko</text>
                   </svg>
                 </div>
               </a>
@@ -335,8 +328,8 @@
         <!-- Friends Comments Section -->
         <div class="box comments-box">
           <div class="box-header">
-            <span>Friends Comments</span>
-            <span class="comment-count-badge">Displaying <span id="displayed-comments-count">3</span> of 6 comments</span>
+            <span>Komentáře přátel</span>
+            <span class="comment-count-badge">Zobrazeno <span id="displayed-comments-count">3</span> z 6 komentářů</span>
           </div>
 
           <div class="comments-list" id="comments-list">
@@ -354,7 +347,7 @@
                 <span class="comment-date">11. Říj 2006</span>
               </div>
               <div class="comment-body">
-                <p>Jordane, ty vole! Ta včerejší párty byla neskutečná! Zase jsem snědl zlatou rybku jednoho z nováčků, protože nepřekonal kvótu! 😂 Půjčíš mi zítra Ferrari? Moje je v servisu!</p>
+                <p>Jordane, ty v***e! Ta včerejší párty byla neskutečná! Zase jsem snědl zlatou rybku jednoho z nováčků, protože nepřekonal kvótu! 😂 Půjčíš mi zítra Ferrari? Moje je v servisu!</p>
               </div>
             </div>
 
@@ -386,7 +379,7 @@
                 <span class="comment-date">02. Říj 2006</span>
               </div>
               <div class="comment-body">
-                <p>Jordane, přestaň utrácet miliony za blbosti a jdi konečně vyvenčit psa! A do té naší dětské ložnice včera v noci nikdo nevešel, tak se nepřetvaruj... 💋💅</p>
+                <p>Jordane, přestaň utrácet miliony za h***oviny a jdi konečně vyvenčit psa! A do té naší dětské ložnice včera v noci nikdo nevešel, tak se nepřetvaruj... 💋💅</p>
               </div>
             </div>
 
@@ -442,7 +435,7 @@
           </div>
 
           <div class="comments-footer">
-            <button id="toggle-comments-btn" class="view-all-btn">View All Comments (6)</button>
+            <button id="toggle-comments-btn" class="view-all-btn">Zobrazit všechny komentáře (6)</button>
           </div>
         </div>
 
@@ -456,7 +449,7 @@
         <strong>Fiktivní fanouškovská / parodická stránka:</strong> Tento profil je školní projekt a parodie vytvořená na motivy filmové postavy Jordana Belforta z filmu <em>Vlk z Wall Street</em> (2013). Nejedná se o oficiální ani osobní stránku skutečné osoby. Všechny zmínky, statusy a postavy odkazují výhradně na fiktivní a filmové výjevy.
       </p>
       <div class="footer-links">
-        <a href="#">About</a> | <a href="#">FAQ</a> | <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Safety</a> | <a href="#">MySpace Film Parody 2006</a>
+        <a href="#">O stránce</a> | <a href="#">Časté dotazy</a> | <a href="#">Podmínky</a> | <a href="#">Soukromí</a> | <a href="#">Bezpečnost</a> | <a href="#">MySpace Parodie k filmu 2006</a>
       </div>
     </footer>
 

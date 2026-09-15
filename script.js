@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     addFriendBtn.addEventListener('click', () => {
       if (!addFriendBtn.classList.contains('pending')) {
         addFriendBtn.classList.add('pending');
-        addFriendBtn.innerHTML = '<span class="icon">⏳</span> Friend Request Pending';
+        addFriendBtn.innerHTML = '<span class="icon">⏳</span> Žádost o přátelství čeká';
       } else {
         addFriendBtn.classList.remove('pending');
-        addFriendBtn.innerHTML = '<span class="icon">➕</span> Add to Friends';
+        addFriendBtn.innerHTML = '<span class="icon">➕</span> Přidat do přátel';
       }
     });
   }
@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     addFavoriteBtn.addEventListener('click', () => {
       if (!addFavoriteBtn.classList.contains('pending')) {
         addFavoriteBtn.classList.add('pending');
-        addFavoriteBtn.innerHTML = '<span class="icon">⭐</span> Added to Favorites';
+        addFavoriteBtn.innerHTML = '<span class="icon">⭐</span> Přidáno do oblíbených';
       } else {
         addFavoriteBtn.classList.remove('pending');
-        addFavoriteBtn.innerHTML = '<span class="icon">⭐</span> Add to Favorites';
+        addFavoriteBtn.innerHTML = '<span class="icon">⭐</span> Přidat do oblíbených';
       }
     });
   }
@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (isExpanded) {
-        toggleCommentsBtn.textContent = 'Hide Extra Comments';
+        toggleCommentsBtn.textContent = 'Skrýt zbývající komentáře';
         if (displayedCountEl) displayedCountEl.textContent = '6';
       } else {
-        toggleCommentsBtn.textContent = 'View All Comments (6)';
+        toggleCommentsBtn.textContent = 'Zobrazit všechny komentáře (6)';
         if (displayedCountEl) displayedCountEl.textContent = '3';
       }
     });
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       isPlaying = !isPlaying;
 
       if (isPlaying) {
-        playPauseBtn.textContent = '⏸ PAUSE';
+        playPauseBtn.textContent = '⏸ PAUZA';
         playPauseBtn.style.backgroundColor = '#d97706';
         playPauseBtn.style.borderColor = '#fbbf24';
 
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
           progressBar.style.width = `${progressWidth}%`;
         }, 300);
       } else {
-        playPauseBtn.textContent = '▶ PLAY';
+        playPauseBtn.textContent = '▶ HRÁT';
         playPauseBtn.style.backgroundColor = '#059669';
         playPauseBtn.style.borderColor = '#10b981';
         if (progressInterval) {
