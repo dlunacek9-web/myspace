@@ -168,6 +168,84 @@
           </div>
         </div>
 
+        <!-- Short Form Feed (Reels / YouTube Shorts) -->
+        <div class="box reels-box">
+          <div class="box-header">
+            <span>🎬 Jordanovy Wall Street Shorts (Reels)</span>
+            <span class="reel-counter-badge" id="reel-counter-badge">Video <span id="reel-current-num">1</span> z 15</span>
+          </div>
+          <div class="reels-body">
+            <div class="reel-stage">
+              <!-- Video Frame Container -->
+              <div class="reel-frame">
+                <iframe id="reel-iframe" src="" title="YouTube Shorts reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <!-- Video Info Bottom Overlay -->
+                <div class="reel-info-overlay">
+                  <div class="reel-author-tag">
+                    <span class="reel-avatar">🐺</span>
+                    <strong>@jordanbelfort</strong>
+                    <span class="reel-follow-badge">SLEDOVAT</span>
+                  </div>
+                  <p class="reel-caption" id="reel-caption">Prodej mi tohle pero! 🖊️ #wolfofwallstreet #shorts</p>
+                  <div class="reel-sound-track">
+                    <span class="sound-icon">🎵</span> <marquee behavior="scroll" direction="left" scrollamount="3" id="reel-sound-name">Jordan Belfort - Stratton Oakmont Anthem</marquee>
+                  </div>
+                </div>
+
+                <!-- Right Action Bar & Scroll Buttons Overlay -->
+                <div class="reel-actions-overlay">
+                  <button type="button" class="reel-btn reel-nav-btn" id="reel-up-btn" title="Předchozí video (Scroll Nahoru)">
+                    <span>⬆️</span>
+                    <span class="btn-label">Nahoru</span>
+                  </button>
+
+                  <button type="button" class="reel-btn reel-interactive-btn" id="reel-like-btn" title="Líbí se mi">
+                    <span class="btn-icon">❤️</span>
+                    <span class="btn-count" id="reel-likes-count">12.5k</span>
+                  </button>
+
+                  <button type="button" class="reel-btn reel-interactive-btn" id="reel-comment-btn" title="Komentáře">
+                    <span class="btn-icon">💬</span>
+                    <span class="btn-count" id="reel-comments-count">342</span>
+                  </button>
+
+                  <button type="button" class="reel-btn reel-interactive-btn" id="reel-share-btn" title="Sdílet video">
+                    <span class="btn-icon">🔗</span>
+                    <span class="btn-count">Sdílet</span>
+                  </button>
+
+                  <button type="button" class="reel-btn reel-nav-btn" id="reel-down-btn" title="Další video (Scroll Dolů)">
+                    <span>⬇️</span>
+                    <span class="btn-label">Dolů</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Toast / Notification banner for copy share link -->
+            <div class="reel-toast" id="reel-toast">Odkaz byl zkopírován do schránky! 📋</div>
+
+            <!-- Modal for Comments -->
+            <div class="reel-comments-modal" id="reel-comments-modal">
+              <div class="comments-modal-content">
+                <div class="modal-header">
+                  <span>💬 Komentáře k videu</span>
+                  <button type="button" class="modal-close-btn" id="close-modal-btn">&times;</button>
+                </div>
+                <div class="modal-body" id="modal-comments-list">
+                  <!-- Comments populated via JS -->
+                </div>
+                <div class="modal-footer">
+                  <input type="text" id="new-reel-comment-input" placeholder="Napiš komentář jako Wall Street makléř..." maxlength="120">
+                  <button type="button" id="send-reel-comment-btn">Odeslat</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
         <!-- About Me & Interests -->
         <div class="box about-box">
           <div class="box-header">O Jordanu Belfortovi (Filmová postava)</div>
