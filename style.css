@@ -625,6 +625,348 @@ a:hover {
   box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 }
 
+/* ==========================================================================
+   Short Form Feed (Reels / YouTube Shorts) Styling
+   ========================================================================== */
+.reels-box {
+  border-color: #c5a059;
+  box-shadow: 0 0 10px rgba(197, 160, 89, 0.15);
+}
+
+.reel-counter-badge {
+  font-size: 11px;
+  color: #10b981;
+  font-weight: bold;
+}
+
+.reels-body {
+  padding: 12px 8px;
+  background-color: #040812;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reel-stage {
+  width: 100%;
+  max-width: 320px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.reel-frame {
+  position: relative;
+  width: 100%;
+  height: 530px;
+  background-color: #000000;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8), 0 0 12px rgba(197, 160, 89, 0.2);
+}
+
+.reel-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Bottom Overlay Info */
+.reel-info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 60px; /* space for side buttons */
+  padding: 12px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);
+  color: #ffffff;
+  pointer-events: auto;
+  z-index: 5;
+}
+
+.reel-author-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.reel-avatar {
+  font-size: 16px;
+  background: #1e293b;
+  border: 1px solid #c5a059;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reel-author-tag strong {
+  font-size: 12px;
+  color: #fbbf24;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.reel-follow-badge {
+  font-size: 9px;
+  font-weight: bold;
+  background-color: #10b981;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+}
+
+.reel-caption {
+  font-size: 11px;
+  line-height: 1.35;
+  color: #f3f4f6;
+  margin-bottom: 6px;
+  text-shadow: 1px 1px 2px #000;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.reel-sound-track {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  color: #9ca3af;
+  background-color: rgba(17, 24, 39, 0.7);
+  padding: 2px 6px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.reel-sound-track marquee {
+  color: #34d399;
+  font-family: monospace;
+}
+
+/* Side Actions Overlay */
+.reel-actions-overlay {
+  position: absolute;
+  right: 6px;
+  bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  z-index: 6;
+}
+
+.reel-btn {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid #334155;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.reel-btn:hover {
+  background: rgba(30, 58, 138, 0.95);
+  border-color: #c5a059;
+  transform: scale(1.08);
+}
+
+.reel-btn.liked {
+  border-color: #ef4444;
+  background: rgba(153, 27, 27, 0.85);
+}
+
+.reel-btn.liked .btn-icon {
+  transform: scale(1.15);
+}
+
+.btn-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.btn-count {
+  font-size: 9px;
+  font-weight: bold;
+  color: #cbd5e1;
+  margin-top: 1px;
+}
+
+.btn-label {
+  font-size: 8px;
+  color: #fbbf24;
+  font-weight: bold;
+}
+
+.reel-nav-btn {
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  border-color: #c5a059;
+}
+
+.reel-nav-btn:hover {
+  background: linear-gradient(180deg, #c5a059 0%, #927131 100%);
+  color: #000;
+}
+
+.reel-nav-btn:hover .btn-label {
+  color: #000;
+}
+
+/* Toast Message */
+.reel-toast {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  background: #059669;
+  color: #ffffff;
+  border: 1px solid #10b981;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+.reel-toast.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Comments Modal */
+.reel-comments-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+
+.reel-comments-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.comments-modal-content {
+  width: 100%;
+  max-width: 320px;
+  background: #0d1527;
+  border: 1px solid #c5a059;
+  border-radius: 8px 8px 0 0;
+  max-height: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  padding: 8px 10px;
+  background: linear-gradient(180deg, #1e3a5f 0%, #0f233d 100%);
+  color: #fbbf24;
+  font-weight: bold;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-close-btn:hover {
+  color: #ef4444;
+}
+
+.modal-body {
+  padding: 8px;
+  overflow-y: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 280px;
+}
+
+.modal-comment-item {
+  background-color: #081120;
+  border: 1px solid #1e293b;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.modal-comment-user {
+  font-weight: bold;
+  color: #60a5fa;
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+.modal-comment-text {
+  font-size: 11px;
+  color: #e2e8f0;
+}
+
+.modal-footer {
+  padding: 6px;
+  display: flex;
+  gap: 4px;
+  background-color: #07101f;
+  border-top: 1px solid #1e293b;
+}
+
+.modal-footer input {
+  flex-grow: 1;
+  background-color: #111827;
+  border: 1px solid #374151;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 11px;
+  border-radius: 3px;
+}
+
+.modal-footer button {
+  background: linear-gradient(180deg, #c5a059 0%, #927131 100%);
+  color: #000;
+  font-weight: bold;
+  font-size: 10px;
+  border: 1px solid #d97706;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
 /* Footer & Disclaimer */
 .myspace-footer {
   margin-top: 15px;
